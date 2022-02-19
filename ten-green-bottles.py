@@ -14,7 +14,6 @@ line4_2 = " green bottles hanging on the wall."
 
 num = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eighth", "nine", "ten"]
 
-number = 10
 print(num[number] + line1_2)
 print(num[number] + line1_2)
 print(line3)
@@ -82,3 +81,6 @@ print(num[number] + line1_2)
 print(num[number] + line1_2)
 print(line3)
 print(line4_1 + num[number-1] + line4_2)
+
+name = "my name is omotola"
+print(type(name))
