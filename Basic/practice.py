@@ -43,3 +43,16 @@ print("Two little blackbirds sitting on a " + location)
 print("One named " + character1 + " and one named " + character2)
 print("Fly away " + character1 + ", fly away " + character2)
 print("Come back " + character1 + ", fly away " + character2)
+
+
+print(""" """)
+print(7//2.5)
+print(10^3)
+print(7**2)
+
+x = 5
+x += 3
+print(x)
+y = 5
+y ^= 3
+print(x)
