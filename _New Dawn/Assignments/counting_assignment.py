@@ -1,38 +1,26 @@
-# import panda
-# climatic_data = panda.read_csv(r"C:\Users\Omotola\Downloads\en_climate_daily_ON_6139530_2022_P1D.csv")
-# print(climatic_data)
+# Assignment: count the number of a given word appears in a text
+# specimen adhan (islamic call to prayer)
+# Objective: to count the number of time ALLAH appears in the call to prayer
 
-import csv
+adhan = """Allahu Akbar! Allahu Akbar! Allahu Akbar! Allahu Akbar!
+Ashhadu an la ilaha illa Allah. Ashhadu an la ilaha illa Allah.
+Ashadu anna Muhammadan Rasool Allah. Ashadu anna Muhammadan Rasool Allah.
+Hayya 'ala-s-Salah. Hayya 'ala-s-Salah.
+Hayya 'ala-l-Falah. Hayya 'ala-l-Falah.
+Allahu Akbar! Allahu Akbar!
+La ilaha illa Allah."""
 
-# import rows as rows
+# replace "Allahu" with "Allah
+adhan_mod = adhan.replace("Allahu", "Allah")
 
-climatic_data = open(r"C:\Users\Omotola\Downloads\climate_daily.csv")
-print(climatic_data)
+# Split `a_string` by whitespace
+word_list = adhan.split()
+almighty = "Allah"
+# count the number of times Allah appears in the text
+almighty_count = adhan_mod.count("Allah")
+print(almighty_count)
 
-climatic_data_csv = csv.reader(climatic_data)
-
-header = []
-header = next(climatic_data_csv)
-print(header)
-
-rows = []
-for x in climatic_data_csv:
-    rows.append(x)
-print(rows)
-
-zero_count = rows.count("2022")
-# print(zero_count)
-if "Longitude (x)" in header:
-    print("yes")
-
-if "Total Precipitation (mm)" in header:
-        print("yes")
-
-# get the index of Total Precipitation
-precipitation_pos = (header.index("Total Precipitation (mm)"))
-print(precipitation_pos)
-
-total_precipitation = rows[precipitation_pos]
-print(total_precipitation)
-
-
+# Extra :-)
+print("")
+number_of_words = len(word_list)
+print(number_of_words)
